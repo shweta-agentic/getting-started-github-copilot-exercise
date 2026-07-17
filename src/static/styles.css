@@ -59,19 +59,78 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f9fbff 0%, #f4f7fb 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.activity-card h4 {
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
   margin-bottom: 10px;
+}
+
+.activity-header h4 {
+  margin-bottom: 0;
   color: #0066cc;
 }
 
-.activity-card p {
+.availability-pill {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.activity-description {
+  color: #555;
   margin-bottom: 8px;
+}
+
+.activity-schedule {
+  margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #d0d7de;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #37474f;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.participant-item {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #455a64;
+  font-size: 0.95rem;
+}
+
+.participant-item.empty {
+  color: #78909c;
+  font-style: italic;
+  background-color: #fafafa;
 }
 
 .form-group {
